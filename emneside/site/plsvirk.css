@@ -1,0 +1,314 @@
+
+
+@font-face {
+    font-family: Karla;
+    src: url(../fonts/Karla/static/Karla-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+body {
+    font-family: Montserrat;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #C9B8A9;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #D3C4B5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* MENU MENU */
+ul.menu { 
+    display: flex;
+    flex-wrap: wrap;}
+
+nav a {
+    text-decoration: none;
+    color: #3B2F2F;
+    font-weight: bold;
+}
+
+li {
+font-family: Montserrat;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    background: #E4DBD4; 
+    padding: 20px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Karla;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #6b4226;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Generelle stilarter */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C9B8A9;
+    
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    background: #fff;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Karla;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    font-family: Karla;
+    text-decoration: none;
+    background-color: #F5F5F5;
+    color: #8C8C8C;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* Hovedindhold */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+   
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tea-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.text-box {
+    max-width: 450px;
+}
+
+
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Montserrat;
+}
+
+
+form {
+    margin-top: 15px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0a0707;
+    border-radius: 5px;
+    background-color: #C9B8A9;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #E4DBD4;
+    
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #877878;
+    color: #fff;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Karla;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* gøre det mobil venligt/* 
+
+/* HERO SEKTION - STANDARD (DESKTOP) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Teksten fylder mere end billedet /*/
+.hero-text {
+    flex: 1;
+}
+
+/* Billedet får en begrænset bredde */
+.hero-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* MOBILVENLIGT DESIGN */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Ændrer til kolonne, så billedet kommer under teksten */
+    }
+
+    .hero-image img {
+        max-width: 100%; 
+    }
+}
+
+
+

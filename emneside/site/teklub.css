@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: Karla;
+    src: url(../fonts/Karla/static/Karla-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Karla;
+    letter-spacing: 2px;
+}
+
+
+
+/* Generelle stilarter */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C9B8A9;
+    
+}
+
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #FFFFFF;
+border-bottom: 2px solid #D3C4B5;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Karla;
+}
+
+/* MENU MENU */
+ul.menu { 
+display: flex;
+flex-wrap: wrap;}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #F5F5F5;
+    color: #8C8C8C;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-family: Karla;
+}
+
+form {
+    font-family: Montserrat;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+   
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tea-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.text-box {
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Montserrat;
+}
+
+
+form {
+    margin-top: 15px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0a0707;
+    border-radius: 5px;
+    background-color: #C9B8A9;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #E4DBD4;
+    
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+button:hover {
+    background-color: #877878;
+    color: #fff;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 20px;
+    font-family: Karla;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+/* layout desktop */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner (tekst + billede) */
+    gap: 40px;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+   /* align-items: center; /* Centrerer vertikalt */
+}
+
+/* Teksten */
+.text-box {
+    max-width: 450px;
+}
+
+/* Billedet */
+.tea-image {
+    width: 300px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobil layot */
+@media (max-width: 765px) {
+    .content {
+        grid-template-columns: 1fr; /* Kun én kolonne */
+    }
+
+    .tea-image {
+        width: 90%; /* Tilpasser billedet */
+        max-width: 400px;
+        justify-self: center; /* Centrerer billedet i Grid */
+    }
+
+    .text-box {
+        max-width: 90%; /* Begrænser teksten */
+        /*justify-self: center; /* Centrerer teksten i Grid */
+    }
+}
+
+

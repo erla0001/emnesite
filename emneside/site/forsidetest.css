@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Karla;
+    src: url(../fonts/Karla/static/Karla-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none; /* Skjuler sidebaren på mobil */
+    }
+
+    .content {
+       margin-left: 0; /* Fjerner pladsen fra sidebar */
+        width: 100%; /* Gør indholdet bredt nok til at fylde hele skærmen */
+    }
+
+    h1, .top-box {
+        margin-left: 0; /* Sikrer, at overskrifter og bokse også er centreret */
+    }
+}
+
+
+
+p {
+    font-family: Montserrat;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Karla;
+    letter-spacing: 2px;
+    margin-left: 260px;
+}
+
+h2 {
+   font-family: Karla; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #C9B8A9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-box {
+    background: #E4DBD4;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 15px;
+    margin-left: 260px; 
+    
+}
+
+.top-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.top-box ul li {
+    margin: 5px 0;
+    font-family: Montserrat;
+}
+
+.button {
+    
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #C9B8A9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Karla;
+    
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+
+.text-box {
+    flex: 1;
+    background: #E4DBD4;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.image-box {
+    flex: 1;
+    text-align: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .image-box {
+        order: -1;
+    }
+}
+
+
+
+/* sidebar */ 
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #ffffff;
+    color: rgb(10, 0, 0);
+    padding-top: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    color: #8C8C8C 
+    background-color: #f5f5f5;
+    color: #8C8C8C;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-family: Karla;
+    margin: 15px 15px;
+    margin-bottom: 15px;
+    text-decoration: none; 
+   background-color: #f5f5f5;
+}
+
+.sidebar a:hover {
+    background-color: #c1bfbf;
+    color: #ffffff;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
